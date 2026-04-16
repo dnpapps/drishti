@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
@@ -11,7 +12,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <div className="h-10 w-10 rounded-2xl bg-blue-600 grid place-items-center text-white font-bold mb-3">DI</div>
+            <Image src="/logo.png" alt="Drishti Infotech Logo" width={40} height={40} className="object-contain mb-3" />
             <p className="text-sm text-slate-400 max-w-xs">Smart solutions for a digital world. We help teams build secure, scalable, and delightful products.</p>
           </div>
           <div>
